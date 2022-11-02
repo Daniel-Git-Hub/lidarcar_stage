@@ -2,8 +2,8 @@ define laser ranger
 (
   sensor
   (
-    range_max 10
-    fov 360
+    range_max 11
+    fov 359.5
     samples 720
   )
   # generic model properties
@@ -34,5 +34,5 @@ define carlike_robot position
   wheelbase 0.166 # distance between both axles
   
   # spawn sensors
-  laser(pose [ -0.1 0.0 -0.11 0.0 ])
+  laser(pose [ -0.1 0.0 -0.15 0.0 ])
 )

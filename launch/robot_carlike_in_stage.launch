@@ -17,6 +17,8 @@
 		<remap from="base_scan" to="scan"/>
   	</node>
 
+	
+
 	<!--  **************** Visualisation ****************  -->
 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidarcar_stage)/cfg/rviz_navigation.rviz"/>
 
