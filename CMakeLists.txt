@@ -7,13 +7,7 @@ project(lidarcar_stage)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  nav_msgs
-  roscpp
-  rospy
-  std_msgs
-  tf
-)
+find_package(catkin REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -206,3 +200,9 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+install(DIRECTORY
+  launch cfg maps stage scripts
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  PATTERN ".svn" EXCLUDE
+)
